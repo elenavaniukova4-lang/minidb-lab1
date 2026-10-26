@@ -2,10 +2,6 @@ import struct
 
 
 class TypeSerializer:
-    """
-    Физический уровень: превращает Python-типы в байты и обратно.
-    Связь с Лекцией 6: именно так СУБД хранит данные на диске.
-    """
 
     @staticmethod
     def serialize_int(val: int) -> bytes:
