@@ -2,10 +2,6 @@ from storage import Storage
 
 
 class MiniDB:
-    """
-    Уровень целостности: проверяет PK, FK и валидирует данные.
-    Делегирует файловые операции классу Storage.
-    """
 
     def __init__(self, data_dir: str = "data"):
         self.storage = Storage(data_dir)
