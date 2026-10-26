@@ -3,10 +3,6 @@ from type_serializer import TypeSerializer
 
 
 class Storage:
-    """
-    Уровень хранения: читает и пишет байты в .dat файлы.
-    Не знает о PK, FK и бизнес-логике — только файлы и байты.
-    """
 
     def __init__(self, data_dir: str = "data"):
         self.data_dir = data_dir
